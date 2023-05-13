@@ -7,6 +7,24 @@ $('.announce').slick({
   dots:false,
   cssEase: 'linear',
   easing: 'easeOutElastic',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.allreviews').slick({
@@ -21,20 +39,13 @@ $('.allreviews').slick({
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
+      breakpoint: 730,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -42,3 +53,18 @@ $('.allreviews').slick({
     }
   ]
 });
+
+
+
+window.addEventListener("scroll", function() {
+  var video = document.getElementById("myVideo");
+  var videoPosition = video.getBoundingClientRect().top;
+  var windowHeight = window.innerHeight;
+  if (videoPosition < windowHeight) {
+    video.play();
+  }
+});
+
+// document.getElementById("scroll").addEventListener("click", function() {
+//   window.location.href = "#WhyChooseUs";
+// });
