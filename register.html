@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="./assets/css/button.css">
-<link rel="stylesheet" href="./assets/css/hamburgermenu.css">
-<link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-<link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
-<link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
-<link rel="stylesheet" href="./assets/scss/login.css" />
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/button.css">
+    <link rel="stylesheet" href="./assets/css/hamburgermenu.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/scss/register.css" />
 </head>
+
 <body>
     <header>
         <div id="topheader">
@@ -25,7 +27,9 @@
                     <div class="leftside col-lg-6 col-md-6 d-flex">
                         <div class="phone d-flex ">
                             <i class="fa-solid fa-phone"></i>
-                            <a style="text-decoration: none;" href="tel:+9945157773"><p>+994 51 577 73 47</p></a>
+                            <a style="text-decoration: none;" href="tel:+9945157773">
+                                <p>+994 51 577 73 47</p>
+                            </a>
                         </div>
                         <div class="email d-md-none d-lg-block">
                             <i class="fa-solid  fa-envelope"></i>
@@ -36,7 +40,8 @@
                         <div>
                             <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
                             <a href="https://www.flickr.com/"><i class="fa-brands fa-flickr"></i></a>
-                            <a href="https://support.google.com/answer/2451065?hl=en"><i class="fa-brands fa-square-google-plus"></i></a>
+                            <a href="https://support.google.com/answer/2451065?hl=en"><i
+                                    class="fa-brands fa-square-google-plus"></i></a>
                             <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
                             <a href=""><i class="fa-solid fa-lock"></i></a>
                             <span><a style="text-decoration: none;" href="./login.html">Login</a></span>
@@ -186,38 +191,57 @@
     </header>
 
     <main>
-     <div class="container">
-        <div class="row">
-            <div class="allform">
-            <div class="col-lg-4 col-md-6">
-                    <h3>Have  an account?</h3>
-                <form>
-                    <div class="mb-3">
-                      <input type="text" placeholder="Username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div class="container">
+            <div class="row">
+                <div class="allform">
+                    <div class="col-lg-5 col-md-9">
+                        <h3>Create an account</h3>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" placeholder="Firstname" class="form-control"
+                                    id="exampleInputFirstName1" aria-describedby="Firstname">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" placeholder="Lastname" class="form-control"
+                                    id="exampleInputLastname1" aria-describedby="Lastname">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" placeholder="Username" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" placeholder="Password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" placeholder="Confirm Password" class="form-control"
+                                    id="exampleInputConfirmPassword1 " aria-describedby="Confirm"">
+                      </div>
+                    <div class=" mb-3 form-check">
+                                <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">I agree to Terms and Cookie
+                                    Policy</label>
+                            </div>
+                            <button type="submit" class="btn ">Sign in</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                      <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                    </div>
-                    <button type="submit" class="btn ">Sign in</button>
-                  </form>
                 </div>
             </div>
         </div>
-     </div>
     </main>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-<script src="./assets/OwlCarousel2-2.3.4/"></script>
-<script src="./assets/js/basket.js"></script>
-<script src="./assets/js/hamburgermenu.js"></script>
-<script src="/assets/js/index.js"></script>
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/OwlCarousel2-2.3.4/"></script>
+    <script src="./assets/js/hamburgermenu.js"></script>
+    <script src="./assets/js/basket.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
+
 </html>

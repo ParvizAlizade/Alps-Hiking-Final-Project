@@ -346,14 +346,20 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
-.allform .col-lg-4 {
+.allform .col-lg-5 {
   border: 1px solid black;
   padding: 80px 30px;
   margin: 0 auto;
+  margin-bottom: 100px;
   border-radius: 10%;
   background-color: rgba(2, 2, 2, 0.615);
 }
-.allform .col-lg-4 .form-control {
+@media screen and (max-width: 391px) {
+  .allform .col-lg-5 {
+    border-radius: 4%;
+  }
+}
+.allform .col-lg-5 .form-control {
   border-radius: 50px;
   padding: 14px 14px;
   background-color: rgba(112, 112, 112, 0.432);
@@ -361,21 +367,21 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.allform .col-lg-4 .form-control::-moz-placeholder {
+.allform .col-lg-5 .form-control::-moz-placeholder {
   color: white;
   font-weight: 500;
 }
-.allform .col-lg-4 .form-control::placeholder {
+.allform .col-lg-5 .form-control::placeholder {
   color: white;
   font-weight: 500;
 }
-.allform .col-lg-4 .checkbox {
+.allform .col-lg-5 .checkbox {
   background-color: rgba(218, 207, 207, 0.63);
 }
-.allform .col-lg-4 label {
+.allform .col-lg-5 label {
   color: white;
 }
-.allform .col-lg-4 button {
+.allform .col-lg-5 button {
   width: 100%;
   padding: 15px 0px;
   border-radius: 40px;
@@ -386,6 +392,6 @@ body {
   text-transform: uppercase;
   cursor: pointer;
 }
-.allform .col-lg-4 button:focus {
+.allform .col-lg-5 button:focus {
   outline: none;
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=register.css.map */

@@ -182,6 +182,158 @@ header {
     font-size: 21px;
   }
 }
+header .basket-menu {
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  width: 34%;
+  top: 0px;
+  right: 0px;
+  padding: 25px 24px;
+}
+@media only screen and (min-width: 391.8px) and (max-width: 768.1px) {
+  header .basket-menu {
+    height: 62vh;
+    width: 50%;
+  }
+  header .basket-menu .items {
+    height: 38vh !important;
+    overflow-y: scroll;
+  }
+  header .basket-menu .items .desc {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 391px) {
+  header .basket-menu {
+    height: 47vh;
+    width: 70%;
+    padding: 10px;
+  }
+  header .basket-menu .items {
+    height: 30vh !important;
+  }
+  header .basket-menu .items .item {
+    margin-top: 9px !important;
+  }
+  header .basket-menu .items .item .image {
+    width: 25% !important;
+  }
+  header .basket-menu .items .item .image img {
+    width: 100%;
+    margin-top: 10px;
+  }
+  header .basket-menu .items .item .desc .about {
+    margin-left: 10px;
+  }
+  header .basket-menu .items .item .desc .about h6 {
+    font-size: 15px;
+  }
+  header .basket-menu .items .item .desc h5 {
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  header .basket-menu .subtotal {
+    margin-top: 0px !important;
+  }
+  header .basket-menu .subtotal h4 {
+    font-size: 15px;
+  }
+  header .basket-menu .button {
+    position: absolute;
+    bottom: 15px;
+    left: 2%;
+  }
+  header .basket-menu .button button {
+    background-color: #193555;
+    padding: 15px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    color: white;
+  }
+  header .basket-menu .closebutton {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+  }
+  header .basket-menu .closebutton button {
+    padding: 5px 20px;
+  }
+}
+header .basket-menu .title {
+  display: flex;
+  justify-content: space-between;
+}
+header .basket-menu .title h5 {
+  display: inline;
+}
+header .basket-menu .title .X {
+  padding: 10px;
+}
+header .basket-menu .items::-webkit-scrollbar {
+  display: none;
+}
+header .basket-menu .items {
+  height: 67vh;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+header .basket-menu .items .item {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+header .basket-menu .items .item .image {
+  width: 28%;
+  display: inline-block;
+}
+header .basket-menu .items .item .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .basket-menu .items .item .desc .about {
+  width: 75%;
+}
+header .basket-menu .items .item .desc h6 {
+  margin-top: 30px;
+  display: inline;
+}
+header .basket-menu .subtotal {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+header .basket-menu .subtotal h4 {
+  text-transform: uppercase;
+  display: inline;
+}
+header .basket-menu .subtotal h6 {
+  font-size: 30px;
+  font-weight: 500;
+  color: red;
+}
+header .basket-menu .button {
+  position: absolute;
+  bottom: 15px;
+  left: 2%;
+}
+header .basket-menu .button button {
+  background-color: #193555;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+header .basket-menu .closebutton {
+  position: absolute;
+  right: 15px;
+  bottom: 20px;
+}
+header .basket-menu .closebutton button {
+  padding: 5px 20px;
+}
 
 #slider {
   position: relative;
@@ -536,6 +688,139 @@ header {
   border: none;
   outline: none;
 }
+#details .rightside .allsec {
+  position: sticky;
+  top: -550px;
+}
+#details .rightside .allsec .booking {
+  top: 0px;
+  border: 1px solid rgba(128, 128, 128, 0.389);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 6px 10px 25px -2px rgba(0, 0, 0, 0.75);
+}
+#details .rightside .allsec .booking .priceside i {
+  font-size: 25px;
+  color: #1a1a1a;
+}
+#details .rightside .allsec .booking .priceside span {
+  font-size: 16px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #b5b5b5;
+  font-size: 17px;
+}
+#details .rightside .allsec .booking .priceside #deletedprice {
+  margin-left: 5px;
+}
+#details .rightside .allsec .booking .priceside #price {
+  font-size: 32px;
+  font-weight: 900;
+  color: rgb(35, 64, 118);
+}
+#details .rightside .allsec .booking .bookingform {
+  margin-top: 50px;
+}
+#details .rightside .allsec .booking .bookingform #title {
+  border-bottom: 2px solid rgb(35, 64, 118);
+  font-size: 18px;
+  color: #242424;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+#details .rightside .allsec .booking .bookingform i {
+  font-size: 30px;
+  color: rgb(35, 64, 118);
+}
+#details .rightside .allsec .booking .bookingform .day input {
+  font-weight: 500;
+  margin-top: 50px;
+  padding: 15px 25px 15px 15px;
+  border-color: rgba(128, 128, 128, 0.163);
+  margin-left: 30px;
+}
+#details .rightside .allsec .booking .bookingform .people {
+  margin-top: 50px;
+}
+#details .rightside .allsec .booking .bookingform .people select {
+  padding: 10px 20px;
+  margin-left: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid rgba(128, 128, 128, 0.308);
+}
+#details .rightside .allsec .booking .bookingform .proceed {
+  margin-top: 50px;
+}
+#details .rightside .allsec .booking .bookingform .proceed button {
+  color: rgb(29, 52, 96);
+  margin-left: 30px;
+  padding: 14px 33px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+#details .rightside .allsec .booking .bookingform .proceed i {
+  margin-left: 8px;
+}
+#details .rightside .allsec .booking .bookingform .wishlist {
+  margin-top: 20px;
+  text-align: center;
+  color: #4f4f4f;
+}
+#details .rightside .allsec .booking .bookingform .wishlist i {
+  font-size: 20px;
+  color: #4f4f4f;
+}
+#details .rightside .allsec .booking .bookingform .wishlist p {
+  margin-left: 11px;
+  display: inline;
+}
+#details .rightside .allsec .whybookwithus {
+  margin-top: 60px;
+  top: 0px;
+  border: 1px solid rgba(128, 128, 128, 0.389);
+  padding: 40px;
+  background-color: rgba(221, 221, 221, 0.497);
+  border-radius: 10px;
+  box-shadow: 6px 10px 25px -2px rgba(0, 0, 0, 0.75);
+}
+#details .rightside .allsec .whybookwithus h5 {
+  margin-bottom: 28px;
+}
+#details .rightside .allsec .whybookwithus i {
+  color: rgb(35, 64, 118);
+  font-size: 17px;
+  font-weight: 600;
+}
+#details .rightside .allsec .whybookwithus span {
+  margin-left: 10px;
+  color: rgb(90, 90, 90);
+}
+#details .rightside .allsec .getquestion {
+  margin-top: 60px;
+  top: 0px;
+  border: 1px solid rgba(128, 128, 128, 0.389);
+  padding: 40px;
+  background-image: url(../images/SectionImages/sidebar-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#details .rightside .allsec .getquestion h4 {
+  color: white;
+}
+#details .rightside .allsec .getquestion p {
+  color: #a7b6cb;
+}
+#details .rightside .allsec .getquestion i {
+  color: #fea11a;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#details .rightside .allsec .getquestion span {
+  color: white;
+}
+
 footer {
   margin-top: 100px;
 }
